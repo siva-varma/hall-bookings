@@ -1,0 +1,27 @@
+{
+    "/": {
+        "GET": {
+            "api": "./lib/root.js"
+        }
+    },
+    "/health": {
+        "GET": {
+            "api": "./lib/health.js"
+        }
+    },
+    "/screens": {
+        "PUT": {
+            "api": "./lib/createScreen.js"
+        }
+    },
+    "/screens/<name>/reserve": {
+        "POST": {
+            "api": "./lib/reserve.js"
+        }
+    },
+    "/screens/<name>/seats": {
+        "GET": {
+            "api": "./lib/getAvailableSeats.js"
+        }
+    }
+}
